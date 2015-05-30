@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0875EC7B1B19E8080064FCB1 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875EC7A1B19E8080064FCB1 /* DemoURL.swift */; };
 		088E7A401B19CB99003468F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E7A3F1B19CB99003468F0 /* AppDelegate.swift */; };
 		088E7A421B19CB99003468F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E7A411B19CB99003468F0 /* ViewController.swift */; };
 		088E7A451B19CB99003468F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088E7A431B19CB99003468F0 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0875EC7A1B19E8080064FCB1 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 		088E7A3A1B19CB99003468F0 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088E7A3E1B19CB99003468F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088E7A3F1B19CB99003468F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				088E7A431B19CB99003468F0 /* Main.storyboard */,
 				088E7A411B19CB99003468F0 /* ViewController.swift */,
 				088E7A5F1B19CBDF003468F0 /* ImageViewController.swift */,
+				0875EC7A1B19E8080064FCB1 /* DemoURL.swift */,
 				088E7A3D1B19CB99003468F0 /* Supporting Files */,
 			);
 			path = Cassini;
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0875EC7B1B19E8080064FCB1 /* DemoURL.swift in Sources */,
 				088E7A421B19CB99003468F0 /* ViewController.swift in Sources */,
 				088E7A601B19CBDF003468F0 /* ImageViewController.swift in Sources */,
 				088E7A401B19CB99003468F0 /* AppDelegate.swift in Sources */,
@@ -415,6 +419,7 @@
 				088E7A5B1B19CB99003468F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		088E7A5C1B19CB99003468F0 /* Build configuration list for PBXNativeTarget "CassiniTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				088E7A5E1B19CB99003468F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
