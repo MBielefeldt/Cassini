@@ -10,5 +10,23 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if let imageVC = segue.destinationViewController as? ImageViewController {
+            if let identifier = segue.identifier {
+                switch identifier {
+                    case "Earth":
+                        imageVC.imageURL = DemoURL.NASA.Earth
+                    case "Cassini":
+                        imageVC.imageURL = DemoURL.NASA.Cassini
+                    case "Saturn":
+                        imageVC.imageURL = DemoURL.NASA.Cassini
+                    default:
+                        break
+                }
+                imageVC.title = identifier
+            }
+        }
+    }
 }
 

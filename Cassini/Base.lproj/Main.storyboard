@@ -44,7 +44,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDw-q2-2Ib">
+                                <rect key="frame" x="223" y="265" width="153" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="Cassini">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ucp-1T-chE" kind="showDetail" identifier="Cassini" id="k5I-lr-72Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQm-wR-R7t">
+                                <rect key="frame" x="230" y="343" width="139" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="Saturn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ucp-1T-chE" kind="showDetail" identifier="Saturn" id="n3L-ld-NIF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfQ-i1-xap">
+                                <rect key="frame" x="244.5" y="187" width="111" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="Earth">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ucp-1T-chE" kind="showDetail" identifier="Earth" id="0Pn-92-euz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="tDw-q2-2Ib" secondAttribute="centerY" id="1AT-66-eZt"/>
+                            <constraint firstItem="tDw-q2-2Ib" firstAttribute="centerX" secondItem="NQm-wR-R7t" secondAttribute="centerX" id="F89-HI-J1E"/>
+                            <constraint firstItem="NQm-wR-R7t" firstAttribute="top" secondItem="tDw-q2-2Ib" secondAttribute="bottom" constant="8" symbolic="YES" id="UvE-dN-Drl"/>
+                            <constraint firstItem="tDw-q2-2Ib" firstAttribute="top" secondItem="gfQ-i1-xap" secondAttribute="bottom" constant="8" symbolic="YES" id="hw2-Md-psK"/>
+                            <constraint firstAttribute="centerX" secondItem="tDw-q2-2Ib" secondAttribute="centerX" id="jVi-WP-RMY"/>
+                            <constraint firstItem="tDw-q2-2Ib" firstAttribute="centerX" secondItem="gfQ-i1-xap" secondAttribute="centerX" id="sZw-Y0-k54"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MQu-y2-8GR"/>
                 </viewController>
@@ -68,7 +108,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuA-Jd-tFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-505" y="952"/>
+            <point key="canvasLocation" x="287" y="963"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="n3L-ld-NIF"/>
+    </inferredMetricsTieBreakers>
 </document>
