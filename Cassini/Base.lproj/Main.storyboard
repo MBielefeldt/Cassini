@@ -107,17 +107,31 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ss-px-Lsx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qcV-E3-ihJ">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="top" secondItem="lZ3-EO-OvO" secondAttribute="top" id="WIe-ax-mh7"/>
-                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="leading" secondItem="lZ3-EO-OvO" secondAttribute="leading" id="Zxl-VF-1AI"/>
-                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="bottom" secondItem="bey-4r-49H" secondAttribute="top" id="gY7-bh-7dm"/>
-                            <constraint firstAttribute="trailing" secondItem="1Ss-px-Lsx" secondAttribute="trailing" id="hkZ-pl-1e9"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ss-px-Lsx" secondAttribute="trailing" id="7zB-Wf-5yM"/>
+                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="centerX" secondItem="qcV-E3-ihJ" secondAttribute="centerX" id="Ebt-i7-Xhr"/>
+                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="top" secondItem="lZ3-EO-OvO" secondAttribute="top" id="IXt-lx-aTT"/>
+                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="bottom" secondItem="bey-4r-49H" secondAttribute="top" id="QIV-0d-Tem"/>
+                            <constraint firstAttribute="centerY" secondItem="qcV-E3-ihJ" secondAttribute="centerY" id="UIf-3H-cSn"/>
+                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="centerY" secondItem="qcV-E3-ihJ" secondAttribute="centerY" id="Ug9-xS-Z2g"/>
+                            <constraint firstAttribute="centerX" secondItem="qcV-E3-ihJ" secondAttribute="centerX" id="tkw-9y-cl0"/>
+                            <constraint firstItem="1Ss-px-Lsx" firstAttribute="leading" secondItem="lZ3-EO-OvO" secondAttribute="leading" id="wwz-Vs-GRG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ebt-i7-Xhr"/>
+                                <exclude reference="Ug9-xS-Z2g"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="1Ss-px-Lsx" id="l4a-ek-KgW"/>
+                        <outlet property="spinner" destination="qcV-E3-ihJ" id="epf-qs-O8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuA-Jd-tFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
