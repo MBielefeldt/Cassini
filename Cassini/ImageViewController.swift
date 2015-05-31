@@ -24,8 +24,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate
         if let url = imageURL {
             spinner?.startAnimating()
             let qos = Int(QOS_CLASS_USER_INITIATED.value)
-            let queue = dispatch_get_global_queue(qos, 0)
-            dispatch_async(queue) {
+            dispatch_async(dispatch_get_global_queue(qos, 0)) {
                 let imageData = NSData(contentsOfURL: url)
                 dispatch_async(dispatch_get_main_queue()) {
                     if url == self.imageURL {
@@ -47,10 +46,10 @@ class ImageViewController: UIViewController, UIScrollViewDelegate
             return imageView.image
         }
         set {
-            spinner?.stopAnimating()
             imageView.image = newValue
             imageView.sizeToFit()
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
     
